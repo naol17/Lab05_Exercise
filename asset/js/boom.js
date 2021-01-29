@@ -13,3 +13,13 @@ Good Luck !!!
 
 
 //ui for location info viriables
+
+const relod = document.querySelector('.fa');
+
+const forhref = document.querySelector(" #ref");
+const forproto = document.querySelector('#proto');
+
+const forhost = document.querySelector("#host");
+const forport = document.querySelector("#prt");
+
+const forhname = document.querySelector("#hname");
