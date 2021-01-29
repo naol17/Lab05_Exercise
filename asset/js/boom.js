@@ -70,3 +70,55 @@ forSpxd.addEventListener('click', shPixle);
 //event for brows history info
 browserLength.addEventListener('click', bhistory);
 browserState.addEventListener('click', bstate);
+
+
+
+//functions
+
+function show(e) {
+    forhref.innerHTML = window.location.href;
+
+}
+
+function sproto(e) {
+    forproto.innerHTML = window.location.protocol;
+
+}
+
+function shost(e) {
+    forhost.innerHTML = window.location.host;
+}
+
+function sport(e) {
+    forport.innerHTML = window.location.port;
+}
+
+function shostn(e) {
+    forhname.innerHTML = window.location.hostname;
+}
+
+
+//function forbrows history
+function sappname(e) {
+    forappname.innerHTML = navigator.appName
+}
+
+function sversion(e) {
+    forversion.innerHTML = navigator.appVersion;
+
+}
+
+function splat(e) {
+    forplatF.innerHTML = navigator.platform;
+
+}
+
+function slangu(e) {
+    forLanguage.innerHTML = navigator.language;
+
+}
+
+function scooki(e) {
+    forcooki.innerHTML = navigator.cookieEnabled;
+
+}
