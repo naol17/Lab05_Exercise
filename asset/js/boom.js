@@ -122,3 +122,34 @@ function scooki(e) {
     forcooki.innerHTML = navigator.cookieEnabled;
 
 }
+
+
+//function for screen info
+function shHight(e) {
+    forShight.innerHTML = window.screen.height;
+}
+
+function shwidth(e) {
+    forSwidth.innerHTML = window.screen.width;
+}
+
+function shPixle(e) {
+    forSpxd.innerHTML = window.screen.pixelDepth;
+}
+// for bhistory info
+function bhistory(e) {
+    browserLength.innerHTML = window.history.length;
+}
+
+function bstate(e) {
+    browserState.innerHTML = window.history.state;
+
+}
+
+
+//for reload
+relod.addEventListener('click', relodepage);
+
+function relodepage() {
+    location.reload();
+}
