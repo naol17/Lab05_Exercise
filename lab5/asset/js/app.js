@@ -27,22 +27,8 @@ clearBtn.addEventListener('click', clearAllTasks);
 //   Filter Task 
 filter.addEventListener('keyup', filterTasks);
 
-
-
-
-
-
-
-
-
-
-
 // Remove task event [event delegation]
 taskList.addEventListener('click', removeTask);
-
-
-
-
 
 //event handler
 function addNewTask(e) {
@@ -73,9 +59,6 @@ function addNewTask(e) {
 }
 
 
-
-
-
 // Clear Task Function definition 
 function clearAllTasks() {
     taskList.innerHTML = '';
@@ -86,9 +69,6 @@ function clearAllTasks() {
     alert("Clear tasks ....");
 
 }
-
-
-
 
 function filterTasks(e) {
 
@@ -105,12 +85,7 @@ function filterTasks(e) {
         }
     }
 
-
-    // var userinput = docum
 }
-
-
-
 
 
 function removeTask(e) {
