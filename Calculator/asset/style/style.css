@@ -1,6 +1,5 @@
 .calculator-grid {
     display: grid;
-    background-color: aqua;
     justify-content: center;
     align-content: center;
     height: 100vh;
