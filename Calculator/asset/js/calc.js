@@ -6,7 +6,28 @@ const deletbutton = document.querySelector('.delletall')
 const privelement = document.querySelector('.previousop')
 const curentelement = document.querySelector('.currentop')
 
+numberbutton.forEach(button => {
+    button.addEventListener('click', () => {
+        Calculator.appendnumber(button.innerText)
+        Calculator.updatescreen()
+    })
+});
 
+operationbutton.forEach(button => {
+    button.addEventListener('click', () => {
+        Calculator.chooseopration(button.innerText)
+        Calculator.updatescreen()
+    })
+});
+
+equalsbutton.addEventListener('click', button => {
+    Calculator.calculate()
+    Calculator.updatescreen()
+})
+deletbutton.addEventListener('click', button => {
+    Calculator.clear()
+    Calculator.updatescreen()
+})
 
 
 
