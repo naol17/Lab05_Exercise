@@ -92,31 +92,21 @@ function clearAllTasks() {
 
 function filterTasks(e) {
 
-    var userinput = document.getElementById("#filter").value.forEach(userinput => {
-
-        if (userinput.querySelectorAll('.collection-item') === -1) {
-
-            return null;
+    var txtValue, ul, li, a;
+    ul = document.getElementById("lists");
+    li = ul.getElementsByTagName('li');
+    for (i = 0; i < li.length; i++) {
+        a = li[i].firstChild;
+        txtValue = a.textContent;
+        if (txtValue.toUpperCase().indexOf(filter.value.toUpperCase()) > -1) {
+            li[i].style.display = "";
         } else {
-            document.querySelectorAll('.collection-item') = userinput;
-            userinput = 'block';
+            li[i].style.display = "none";
         }
+    }
 
-    });
 
-
-    /* var userinput = document.getElementsByName("filter")
-      var asignuserinput = userinput;
-
-      const lielements = document.querySelectorAll('.collection-item')
-
-      h.forEach(lielements => {
-          if (lielements.userinput = lielements.indexOf(asignuserinput)) {
-              console.log(lielements.indexOf(userinput));
-          } else {
-              console.log("error");
-          }
-      });*/
+    // var userinput = docum
 }
 
 
