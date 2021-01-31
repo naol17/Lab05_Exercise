@@ -1,0 +1,39 @@
+.calculator-grid {
+    display: grid;
+    background-color: aqua;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: repeat(4, 80px);
+}
+
+.calculator-grid>button {
+    outline: none;
+    font-size: 2rem;
+    border: 1px solid rgb(233, 9, 9);
+    background: rgb(137, 148, 87);
+    margin: 2px;
+}
+
+#output {
+    padding: 10px;
+    grid-column: 1/-1;
+    background: rgb(150, 236, 11);
+    height: 70px;
+    display: grid;
+    align-self: flex-end;
+    float: right;
+}
+
+.output>.previousop {
+    color: rgb(129, 125, 125);
+}
+
+.output>.currentop {
+    color: white;
+}
+
+.calculator-grid>.number {
+    color: white;
+    background: #000;
+}
